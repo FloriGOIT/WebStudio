@@ -186,7 +186,8 @@ p {
                         text-align: center;
                         margin: 0 auto;}
 
-.heading .order-service-button {box-sizing: border-box;
+.heading .order-service-button,
+.buttons-line button {box-sizing: border-box;
                                   font: var(--ro500-s16-lh24);
                                   background-color: var(--color-iris);
                                   color: white;
@@ -199,9 +200,10 @@ p {
                                   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
                                   margin: 0 auto;}
 
-.heading .order-service-button:hover {
+.heading .order-service-button:hover,
+.buttons-line button:hover {
   color: var(--color-iris); /*transition*/
-  background-color: white;
+  background-color: rgb(179, 210, 245);
   border-width: 0px;
   box-shadow: inset 0 0 4px 5px cornflowerblue;
 }
@@ -293,10 +295,10 @@ p {
                                                                   margin-top: 8px;
                                                                   fill:rgba(175, 177, 184, 1);
                                                                   padding-left: 0px;
-                                                                  padding-right: 0px;}
+                                                                  padding-right: 0px;cursor: pointer;}
 .main-webstudio .team ul li .card-description-studio .icons-body svg {width: 40px;
                                                                     height: 40px;
-                                                                    margin-top:0px;}
+                                                                    margin-top:0px; }
 
 /*main-webstudio clients*/
 .main-webstudio .clients h2 {margin-bottom: 72px;}
@@ -335,8 +337,7 @@ p {
 
 /*PORTOFOLIO*/
 /*main-portofolio page-buttons*/
-.main-portofolio page-buttons {
-  cursor: pointer;
+.main-portofolio .page-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -345,25 +346,8 @@ p {
   padding-bottom: 72px;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-top: 1px solid #e7e9fc;}
-.buttons-line button {
-    font: var(--ro500-s16-lh24);
-    letter-spacing: 0.04em;
-    color: var(--color-iris);
-    border: 1px solid #e7e9fc;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
-    padding: 12px 24px;
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-  
-.buttons-line button:focus,
-.buttons-line button:hover {
-    background-color: var(--heighlight-bgcolor); /*transition*/
-    color: var(--heighlight-color);
-    box-shadow: inset 0 0 20px 5px rgba(10, 51, 77, 0.671);}
+  border-top: 2px solid #e7e9fc; cursor: pointer;}
+
 
 /*PORTOFOLIO*/
 /*main-portofolio cards-portofolio*/  
@@ -372,17 +356,20 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px;
+  margin: 0 auto;
   column-gap: 24px;
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 48px;
   padding-bottom: 120px;
 }
+.cards-portofolio .cards-description li{width: 370px;border: 1px solid #e7e9fc; }
 
 .cards-portofolio .cards-description img {
   display: block;
-  max-width: 100%;
+  width: 370px;
+  height: 300px;
+
 }
 
 .main-portofolio .cards-description div {
@@ -390,7 +377,8 @@ p {
 }
 
 .card-description-portofolio {
-  border-width: 0px 1px 1px;
+  border-width: 0px;
+  border-top-width: 1px;
   border-color: #e7e9fc;
   border-style: solid;
   background-color: white;
@@ -561,7 +549,11 @@ footer {background-color: var(--main-color);
   letter-spacing: 0.04em;
   border-radius: 4px;
   border-width: 0px;
+  cursor: pointer;
 }
+
+.email-footer .email-subscribe:active,
+.email-footer .email-subscribe:hover{background-color:var(--heighlight-bgcolor)}
 
 
 
@@ -993,7 +985,7 @@ footer {background-color: var(--main-color);
     flex-direction: row;}
   .header-address {display: flex;
                   font: var(--ro400-s16-lh24);
-                  margin-left: 316px;}
+                  margin-left: 310px;}
  .navigation-address .mobile-menu {display: none;}
 
   .heading {text-align: center;
