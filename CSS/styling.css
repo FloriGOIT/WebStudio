@@ -1033,7 +1033,7 @@ footer {
     width: 100%;
   }
   .email-footer .subscribe-container input {
-    width: 100%;
+    width: 80%;
     margin-bottom: 16px;
   }
 }
