@@ -785,6 +785,7 @@ footer {
   height: 40px;
   border: none;
   background-color: white;
+  border-radius: 50%;
   top: 0px;
   right: 0px;
   margin-top: 0px;
@@ -809,8 +810,9 @@ footer {
   height: 100vh;
   padding-left: 40px;
   padding-right: 20px;
-  background-color: white;
+  background-color: rgb(166, 246, 252);
   justify-content: center;
+  z-index: 20;
 }
 
 .js-menu-container.is-open .navigation-menu-mobile {
