@@ -205,7 +205,7 @@ p {
 }
 
 .heading .order-service-button,
-.buttons-line button {
+.buttons-line button{
   box-sizing: border-box;
   font: var(--ro500-s16-lh24);
   background-color: var(--color-iris);
@@ -222,7 +222,8 @@ p {
 
 .heading .order-service-button:hover,
 .buttons-line button:hover,
-.email-footer .email-subscribe:hover {
+.email-footer .email-subscribe:hover,
+.modal-container button:hover {
   /*transition*/
   background-color: rgb(114, 144, 241);
   border-width: 0px;
